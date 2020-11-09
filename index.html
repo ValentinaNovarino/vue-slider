@@ -17,7 +17,7 @@
                 <div class="slide">
                     <img :src="images[indexImage]" alt="">
                     <div class="shot">
-                        <i v-for='(image, index) in images' class="fas fa-circle" :class='index == indexImage ? "active" : null'></i>
+                        <i @click='clickShot(index)' v-for='(image, index) in images' class="fas fa-circle" :class='index == indexImage ? "active" : null'></i>
                     </div>
                 </div>
                 <div class="next">
