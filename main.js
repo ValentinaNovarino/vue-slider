@@ -14,11 +14,17 @@ var app = new Vue (
         },
         methods: {
             prevImage() {
-                this.indexImage  -= 1;
+                this.indexImage--;
+                if (this.indexImage < 0) {
+                    this.indexImage = this.images.length - 1;
+                }
             },
 
             nextImage() {
-                this.indexImage += 1;
+                this.indexImage++;
+                if (this.indexImage == this.images.length) {
+                    this.indexImage = 0;
+                }
             }
         }
     }
