@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    height: 400px;
+    width: 700px;
+    margin: auto;
+}
+
+.prev, .next {
+    float: left;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    float: left;
+    width: calc(100% - 140px);
+    height: 100%;
+    background-color: blue;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
