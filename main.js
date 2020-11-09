@@ -19,7 +19,6 @@ var app = new Vue (
                     this.indexImage = this.images.length - 1;
                 }
             },
-
             nextImage() {
                 this.indexImage++;
                 if (this.indexImage == this.images.length) {
