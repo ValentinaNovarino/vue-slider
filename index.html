@@ -16,6 +16,9 @@
                 </div>
                 <div class="slide">
                     <img :src="images[indexImage]" alt="">
+                    <div class="shot">
+                        <i v-for='i in images' class="fas fa-circle"></i>
+                    </div>
                 </div>
                 <div class="next">
                     <i @click='nextImage()' class="fas fa-chevron-circle-right fa-2x"></i>
