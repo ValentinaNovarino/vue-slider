@@ -21,18 +21,17 @@ var app = new Vue (
                 }
             },
             nextImage() {
-                setInterval(() => {
-                    this.indexImage++;
-                    if (this.indexImage == this.images.length) {
-                        this.indexImage = 0;
-                    }
-                }, 2000);
-            },
+                this.indexImage++;
+                if (this.indexImage == this.images.length) {
+                this.indexImage = 0;
+            }
+
+            }
         },
         created() {
-            this.nextImage();
+            setInterval(() => {
+                this.nextImage();
+            },2000);
         }
-
     }
-
 );

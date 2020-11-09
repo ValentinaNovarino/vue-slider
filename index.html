@@ -19,9 +19,6 @@
                     <div class="shot">
                         <i v-for='(image, index) in images' class="fas fa-circle" :class='index == indexImage ? "active" : null'></i>
                     </div>
-                    <!-- <div class="play">
-                        <button @click='autoplay()' type="button">{{ button }}</button>
-                    </div> -->
                 </div>
                 <div class="next">
                     <i @click='nextImage()' class="fas fa-chevron-circle-right fa-2x"></i>
