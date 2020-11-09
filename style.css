@@ -52,3 +52,17 @@
 .shot i.active {
     color: red;
 }
+
+.play {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.play button{
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    outline: inherit;
+}

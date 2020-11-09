@@ -10,7 +10,8 @@ var app = new Vue (
                 'https://cdn.getyourguide.com/img/location/5c04f6f20650d.jpeg/148.jpg',
                 'https://www.serenapuosi.com/wp-content/uploads/2011/08/canzoni-su-new-york-1080x720.jpg',
                 'https://www.greentechmedia.com/assets/content/cache/made/assets/content/cache/remote/https_assets.greentechmedia.com/content/images/articles/New_York_Manhattan_Skyline_XL_Pixabay_500_500_80_s_c1.jpg'
-            ]
+            ],
+            button: 'PLAY'
         },
         methods: {
             prevImage() {
@@ -24,8 +25,14 @@ var app = new Vue (
                 if (this.indexImage == this.images.length) {
                     this.indexImage = 0;
                 }
+            },
+            autoplay() {
+                setInterval(() => {
+                    this.nextImage();
+                }, 2000);
             }
-        }
+       },
+
     }
 
 );
